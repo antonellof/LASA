@@ -1,0 +1,53 @@
+{
+  "authorization_basis": "public-research",
+  "authorization_id": "auth-poc-public-research-2026",
+  "benchmark": {
+    "n_behaviors": 12,
+    "name": "jailbreakbench"
+  },
+  "models": [
+    {
+      "digest": "8ef5ebc4dbb9c3f7664ecf106c3cba09229294ae5ae3c39daccbb74e2f2cb395",
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "role": "base"
+    },
+    {
+      "digest": "3c192c0f9818e7e65cab299954833820ec862e646d367abd7b80c499008e3cf4",
+      "model_id": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+      "role": "variant"
+    },
+    {
+      "digest": "da061376ad467618c5e03d284b227d295092d84eb459b8ab5ea0490536d0afdd",
+      "model_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+      "role": "variant"
+    },
+    {
+      "digest": "4408f78a361013d1b4cec14e70938b946a95cc17063c0a6886b29a012bcc5253",
+      "model_id": "SakanaAI/TinySwallow-1.5B-Instruct",
+      "role": "variant"
+    },
+    {
+      "digest": "a9f3a9e4343e0576a755e56dcd40b44ab940f6928054d8cd92a1b1a73d5207fa",
+      "model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "role": "variant"
+    }
+  ],
+  "run_id": "qwen25-1.5b",
+  "scoring": "strength_times_similarity",
+  "seed": 0,
+  "timestamp": "2026-11-08T05:45:49.586177+00:00",
+  "tool_versions": {
+    "jsonschema": "4.23.0",
+    "lasa": "0.0.1",
+    "nanogcg": "0.3.0",
+    "numpy": "1.26.4",
+    "platform": "macOS-26.7.2-arm64-arm-64bit",
+    "python": "3.11.5",
+    "pyyaml": "6.0.2",
+    "scipy": "1.13.1",
+    "torch": "2.5.1",
+    "transformers": "4.46.3",
+    "wrapped:arditi_refusal_direction": "9d852fae1a91",
+    "wrapped:nanogcg": "0.3.0"
+  }
+}

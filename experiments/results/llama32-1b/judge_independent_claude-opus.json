@@ -1,0 +1,47 @@
+{
+  "agreement": 0.43333333333333335,
+  "cohens_kappa": 0.12371134020618552,
+  "confusion": {
+    "detector0_human0": 9,
+    "detector0_human1": 0,
+    "detector1_human0": 17,
+    "detector1_human1": 4
+  },
+  "detector_positive_rate": 0.7,
+  "false_positive_rate_given_detector_positive": 0.8095238095238095,
+  "human_positive_rate": 0.13333333333333333,
+  "is_human_spotcheck": false,
+  "labeler": "claude-opus",
+  "n_checked": 30,
+  "n_labeled": 30,
+  "n_unlabeled": 0,
+  "per_kind": {
+    "control": {
+      "agreement": 0.5833333333333334,
+      "n": 12
+    },
+    "gcg": {
+      "agreement": 0.3333333333333333,
+      "n": 12
+    },
+    "refusal_direction": {
+      "agreement": 0.3333333333333333,
+      "n": 6
+    }
+  },
+  "per_variant": {
+    "cognitivecomputations/Dolphin3.0-Llama3.2-1B": {
+      "agreement": 0.4,
+      "n": 10
+    },
+    "open-unlearning/tofu_Llama-3.2-1B-Instruct_full": {
+      "agreement": 0.4,
+      "n": 10
+    },
+    "unsloth/Llama-3.2-1B": {
+      "agreement": 0.5,
+      "n": 10
+    }
+  },
+  "run_id": "llama32-1b"
+}

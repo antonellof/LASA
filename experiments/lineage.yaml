@@ -1,0 +1,51 @@
+# Declared lineage for every evaluated checkpoint, read by `lasa aggregate`.
+#
+# lineage values:
+#   child_ft         initialized from the aligned Instruct base
+#   sibling_ft       branched from the same pretrained parent, not from the Instruct base
+#   sibling_distill  distilled into a sibling of the base
+#   parent           the unaligned pretrained model the base was tuned from
+# control: true marks a positive control (refusal direction removed on purpose).
+# reasoning: true marks a model whose template opens with a reasoning block; its detector ASR is unreliable at short budgets.
+# label_offset: optional [dx, dy] in points for the figure label.
+
+families:
+  qwen25-1.5b:
+    label: Qwen2.5-1.5B
+    model_lineage: Qwen2.5
+    base: Qwen/Qwen2.5-1.5B-Instruct
+    variants:
+      Qwen/Qwen2.5-Coder-1.5B-Instruct: {short: Coder-1.5B-It, lineage: sibling_ft}
+      Qwen/Qwen2.5-Math-1.5B-Instruct: {short: Math-1.5B-It, lineage: sibling_ft}
+      SakanaAI/TinySwallow-1.5B-Instruct: {short: TinySwallow-1.5B-It, lineage: child_ft}
+      deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B: {short: DeepSeek-R1-1.5B, lineage: sibling_distill, reasoning: true, label_offset: [6, -11]}
+  qwen25-0.5b:
+    label: Qwen2.5-0.5B
+    model_lineage: Qwen2.5
+    base: Qwen/Qwen2.5-0.5B-Instruct
+    variants:
+      Qwen/Qwen2.5-Coder-0.5B-Instruct: {short: Coder-0.5B-It, lineage: sibling_ft, label_offset: [6, -11]}
+      Qwen/Qwen2.5-0.5B: {short: Qwen2.5-0.5B, lineage: parent}
+  llama32-1b:
+    label: Llama-3.2-1B
+    model_lineage: Llama-3.2
+    base: unsloth/Llama-3.2-1B-Instruct
+    variants:
+      open-unlearning/tofu_Llama-3.2-1B-Instruct_full: {short: TOFU-Llama-1B-It, lineage: child_ft, label_offset: [-40, 7]}
+      cognitivecomputations/Dolphin3.0-Llama3.2-1B: {short: Dolphin3.0-1B, lineage: sibling_ft, label_offset: [-30, 9]}
+      unsloth/Llama-3.2-1B: {short: Llama-3.2-1B, lineage: parent}
+  smollm2-1.7b:
+    label: SmolLM2-1.7B
+    model_lineage: SmolLM2
+    base: HuggingFaceTB/SmolLM2-1.7B-Instruct
+    variants:
+      saidutta69/SmolLM2-1.7B-Instruct-heretic: {short: SmolLM2-Heretic, lineage: child_ft, control: true}
+      yoshitomo-matsubara/smollm2_1_7b-alpaca-it: {short: SmolLM2-Alpaca-It, lineage: child_ft, label_offset: [6, -11]}
+      HuggingFaceTB/SmolLM2-1.7B: {short: SmolLM2-1.7B, lineage: parent, label_offset: [-22, 8]}
+  gemma2-2b:
+    label: Gemma-2-2B
+    model_lineage: Gemma-2
+    base: unsloth/gemma-2-2b-it
+    variants:
+      cognitivecomputations/dolphin-2.9.4-gemma2-2b: {short: Dolphin-2.9.4-2B, lineage: sibling_ft}
+      unsloth/gemma-2-2b: {short: Gemma-2-2B, lineage: parent, label_offset: [6, 4]}

@@ -1,0 +1,48 @@
+{
+  "authorization_basis": "public-research",
+  "authorization_id": "auth-poc-public-research-2026",
+  "benchmark": {
+    "n_behaviors": 12,
+    "name": "jailbreakbench"
+  },
+  "models": [
+    {
+      "digest": "944ec808d91df858b0ea5eb5a0eef295ec308c8f4adaedc0c1ae4d8f27cd80ed",
+      "model_id": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+      "role": "base"
+    },
+    {
+      "digest": "6d281ce9bebaa7fe0101663563ac286a36fad1e260cb6f57ada5d5640394b949",
+      "model_id": "saidutta69/SmolLM2-1.7B-Instruct-heretic",
+      "role": "variant"
+    },
+    {
+      "digest": "4b0a56fca0c260b59d65a71a8d2125ca8708f3a137a741607f7c7c3d79e80480",
+      "model_id": "HuggingFaceTB/SmolLM2-1.7B",
+      "role": "variant"
+    },
+    {
+      "digest": "66c35fc70d2e6bbad460e55f75232892274f002aa33070cffd8819b5b82e68cf",
+      "model_id": "yoshitomo-matsubara/smollm2_1_7b-alpaca-it",
+      "role": "variant"
+    }
+  ],
+  "run_id": "smollm2-1.7b",
+  "scoring": "strength_times_similarity",
+  "seed": 0,
+  "timestamp": "2026-11-08T05:46:19.541551+00:00",
+  "tool_versions": {
+    "jsonschema": "4.23.0",
+    "lasa": "0.0.1",
+    "nanogcg": "0.3.0",
+    "numpy": "1.26.4",
+    "platform": "macOS-26.7.2-arm64-arm-64bit",
+    "python": "3.11.5",
+    "pyyaml": "6.0.2",
+    "scipy": "1.13.1",
+    "torch": "2.5.1",
+    "transformers": "4.46.3",
+    "wrapped:arditi_refusal_direction": "9d852fae1a91",
+    "wrapped:nanogcg": "0.3.0"
+  }
+}

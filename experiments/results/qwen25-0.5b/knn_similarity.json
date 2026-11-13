@@ -1,0 +1,36 @@
+{
+  "base": "Qwen/Qwen2.5-0.5B-Instruct",
+  "k_values": [
+    5,
+    10,
+    20
+  ],
+  "layer_frac": 0.8,
+  "metric": "mutual kNN Jaccard, cosine neighbours (Angell et al., 2025)",
+  "n_probes": 240,
+  "run_id": "qwen25-0.5b",
+  "variants": [
+    {
+      "last_k10": 0.24151728796659136,
+      "last_k20": 0.3206814365743244,
+      "last_k5": 0.19593253968253965,
+      "layer_base": 19,
+      "layer_variant": 19,
+      "mean_k10": 0.5777453211276741,
+      "mean_k20": 0.7130386818176996,
+      "mean_k5": 0.5765542328042329,
+      "model_id": "Qwen/Qwen2.5-Coder-0.5B-Instruct"
+    },
+    {
+      "last_k10": 0.6005715689539219,
+      "last_k20": 0.653447858860465,
+      "last_k5": 0.5479828042328042,
+      "layer_base": 19,
+      "layer_variant": 19,
+      "mean_k10": 0.8287004662004662,
+      "mean_k20": 0.9068093983311376,
+      "mean_k5": 0.8470238095238094,
+      "model_id": "Qwen/Qwen2.5-0.5B"
+    }
+  ]
+}

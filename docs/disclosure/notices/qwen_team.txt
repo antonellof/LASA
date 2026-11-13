@@ -1,0 +1,29 @@
+DO NOT SEND: historical measurements below are superseded and not validated findings. See docs/disclosure/README.md.
+
+Subject: Heads-up: refusal-direction transfer measured on Qwen/Qwen2.5-Coder-1.5B-Instruct, Qwen/Qwen2.5-Math-1.5B-Instruct
+
+Hello Qwen team (Alibaba),
+
+I am Antonello Fratepietro, a security researcher. Ahead of a preprint on inherited jailbreak
+risk in fine-tuned open-weight models, I am sharing a finding about a checkpoint
+you publish, Qwen/Qwen2.5-Coder-1.5B-Instruct, Qwen/Qwen2.5-Math-1.5B-Instruct, as a courtesy before publication.
+
+Using the public refusal-direction method of Arditi et al. (2024), I extracted the
+refusal direction from Qwen2.5-1.5B-Instruct and applied it as an activation ablation to
+Qwen/Qwen2.5-Coder-1.5B-Instruct, Qwen/Qwen2.5-Math-1.5B-Instruct. Across 12 JailbreakBench behaviors, 5 generations each, measured
+against a no-attack control, this raised the non-refusal rate as follows: Qwen2.5-Coder-1.5B-Instruct +10.0 pts (RefCos +0.3627); Qwen2.5-Math-1.5B-Instruct +13.3 pts (RefCos +0.3824). An automated label
+was used, so the figure is an upper bound on actual harmful compliance; see the
+limitations section of the paper.
+
+This is not a new attack. It confirms, on your checkpoint, the known result that a
+base model's refusal direction transfers to its derivatives. I am not sharing any
+harmful generations. The method, the aggregate numbers, and the code are in the
+paper and repository.
+
+I plan to submit no earlier than [fill: submission date, >= 30 days out]. If you would like the
+per-behavior detail, want a correction, or would prefer different handling, please
+reply and I will hold.
+
+Thank you,
+Antonello Fratepietro
+antonello.f@gmail.com

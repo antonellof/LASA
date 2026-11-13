@@ -1,0 +1,45 @@
+# Gemma 2 2B family experiment config (Google Gemma2ForCausalLM architecture).
+run_id: gemma2-2b
+seed: 0
+
+authorization: configs/authorization.poc.json
+
+base:
+  model_id: unsloth/gemma-2-2b-it
+
+variants:
+  - model_id: cognitivecomputations/dolphin-2.9.4-gemma2-2b
+  - model_id: unsloth/gemma-2-2b
+
+benchmark:
+  name: jailbreakbench
+  subset: standard
+  limit: 12
+
+similarity:
+  metrics: [cka, cosine_meanpool]
+  probe_set: configs/neutral_probes.txt
+
+attacks:
+  primitives: [refusal_direction, gcg]
+  contrast_pairs: 16
+  max_new_tokens: 48
+  gcg:
+    num_steps: 5
+    search_width: 16
+    topk: 16
+
+predict:
+  scoring: strength_times_similarity
+  # The committed results were produced with refcos_times_cka (ADR-0009).
+  similarity_metric: refcos_times_cka
+
+verify:
+  top_k: 24
+  generations_per_attack: 5
+  judge: local
+  max_new_tokens: 48
+  human_spotcheck_fraction: 0.25
+
+report:
+  out_dir: reports/gemma2-2b

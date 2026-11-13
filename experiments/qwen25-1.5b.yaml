@@ -1,0 +1,47 @@
+# Qwen 2.5 family experiment config (M4 second family).
+run_id: qwen25-1.5b
+seed: 0
+
+authorization: configs/authorization.poc.json
+
+base:
+  model_id: Qwen/Qwen2.5-1.5B-Instruct
+
+variants:
+  - model_id: Qwen/Qwen2.5-Coder-1.5B-Instruct
+  - model_id: Qwen/Qwen2.5-Math-1.5B-Instruct
+  - model_id: SakanaAI/TinySwallow-1.5B-Instruct
+  - model_id: deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+
+benchmark:
+  name: jailbreakbench
+  subset: standard
+  limit: 12
+
+similarity:
+  metrics: [cka, cosine_meanpool]
+  probe_set: configs/neutral_probes.txt
+
+attacks:
+  primitives: [refusal_direction, gcg]
+  contrast_pairs: 64
+  max_new_tokens: 48
+  gcg:
+    num_steps: 5
+    search_width: 16
+    topk: 16
+
+predict:
+  scoring: strength_times_similarity
+  # The committed results were produced with refcos_times_cka (ADR-0009).
+  similarity_metric: refcos_times_cka
+
+verify:
+  top_k: 24
+  generations_per_attack: 5
+  judge: local
+  max_new_tokens: 48
+  human_spotcheck_fraction: 0.25
+
+report:
+  out_dir: reports/qwen25-1.5b

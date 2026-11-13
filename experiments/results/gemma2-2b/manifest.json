@@ -1,0 +1,43 @@
+{
+  "authorization_basis": "public-research",
+  "authorization_id": "auth-poc-public-research-2026",
+  "benchmark": {
+    "n_behaviors": 12,
+    "name": "jailbreakbench"
+  },
+  "models": [
+    {
+      "digest": "ad3c56fa8a0288e6ebcf55fdf4a6e40fca2766019a1a8203c17266bad4f8efd2",
+      "model_id": "unsloth/gemma-2-2b-it",
+      "role": "base"
+    },
+    {
+      "digest": "ed2ed203ea46fc9f04021bf8f658e9aef8ed74d035955aa2a99a272f5a0e87ff",
+      "model_id": "cognitivecomputations/dolphin-2.9.4-gemma2-2b",
+      "role": "variant"
+    },
+    {
+      "digest": "4f6dcef6c4167519154cdd757f26a4ae65172d47f9291a4282988d07abdf1be3",
+      "model_id": "unsloth/gemma-2-2b",
+      "role": "variant"
+    }
+  ],
+  "run_id": "gemma2-2b",
+  "scoring": "strength_times_similarity",
+  "seed": 0,
+  "timestamp": "2026-11-08T05:46:27.823327+00:00",
+  "tool_versions": {
+    "jsonschema": "4.23.0",
+    "lasa": "0.0.1",
+    "nanogcg": "0.3.0",
+    "numpy": "1.26.4",
+    "platform": "macOS-26.7.2-arm64-arm-64bit",
+    "python": "3.11.5",
+    "pyyaml": "6.0.2",
+    "scipy": "1.13.1",
+    "torch": "2.5.1",
+    "transformers": "4.46.3",
+    "wrapped:arditi_refusal_direction": "9d852fae1a91",
+    "wrapped:nanogcg": "0.3.0"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "agreement": 0.4666666666666667,
+  "cohens_kappa": 0.1578947368421053,
+  "confusion": {
+    "detector0_human0": 5,
+    "detector0_human1": 0,
+    "detector1_human0": 16,
+    "detector1_human1": 9
+  },
+  "detector_positive_rate": 0.8333333333333334,
+  "false_positive_rate_given_detector_positive": 0.64,
+  "human_positive_rate": 0.3,
+  "is_human_spotcheck": false,
+  "labeler": "claude-opus",
+  "n_checked": 30,
+  "n_labeled": 30,
+  "n_unlabeled": 0,
+  "per_kind": {
+    "control": {
+      "agreement": 0.8571428571428571,
+      "n": 7
+    },
+    "gcg": {
+      "agreement": 0.46153846153846156,
+      "n": 13
+    },
+    "refusal_direction": {
+      "agreement": 0.2,
+      "n": 10
+    }
+  },
+  "per_variant": {
+    "HuggingFaceTB/SmolLM2-1.7B": {
+      "agreement": 0.2,
+      "n": 10
+    },
+    "saidutta69/SmolLM2-1.7B-Instruct-heretic": {
+      "agreement": 0.8,
+      "n": 10
+    },
+    "yoshitomo-matsubara/smollm2_1_7b-alpaca-it": {
+      "agreement": 0.4,
+      "n": 10
+    }
+  },
+  "run_id": "smollm2-1.7b"
+}

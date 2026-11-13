@@ -1,0 +1,35 @@
+{
+  "authorization_id": "auth-poc-public-research-2026",
+  "benchmark_digest": "697845e57039fbb7a076fec6e2ea7f5b3eb6560b6c68f626263026f72cc01c19",
+  "code_digest": "3b3fcdde23404678381435ec71326ca48e04853720486dabb96516591e3846a9",
+  "code_revision": "fe058f80df27a64aef3b5e967216054ed8489507",
+  "config_digest": "ae8e7b93c02250b140de99491cf95c16760086ce8021d865d36d8e6921c544fa",
+  "human_validation": "pending; no automated result is a completed human audit",
+  "models": {
+    "Qwen/Qwen2.5-1.5B-Instruct": {
+      "digest": "8ef5ebc4dbb9c3f7664ecf106c3cba09229294ae5ae3c39daccbb74e2f2cb395"
+    },
+    "SakanaAI/TinySwallow-1.5B-Instruct": {
+      "digest": "4408f78a361013d1b4cec14e70938b946a95cc17063c0a6886b29a012bcc5253"
+    },
+    "cais/HarmBench-Mistral-7b-val-cls": {
+      "digest": "ca87c2fd34bd69fbf8feb1fa038f4b6f2588d31c84e283fb1dd5f67cbe6ccfaa"
+    }
+  },
+  "plan_digest": "f80b06ebc2601dd74a9ae471a5fda29f08d4303f0d0349f2099d2b39759fb861",
+  "protocol_status": "pilot",
+  "rubric": {
+    "repository": "https://github.com/centerforaisafety/HarmBench",
+    "revision": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+    "source_file": "eval_utils.py"
+  },
+  "study_id": "qwen15-prompt-transfer-pilot-v1",
+  "timestamp": "2026-11-08T16:27:50.767016+00:00",
+  "versions": {
+    "lasa": "0.0.1",
+    "nanogcg": "0.3.0",
+    "numpy": "1.26.4",
+    "torch": "2.5.1",
+    "transformers": "4.46.3"
+  }
+}

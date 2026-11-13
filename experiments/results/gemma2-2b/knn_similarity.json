@@ -1,0 +1,36 @@
+{
+  "base": "unsloth/gemma-2-2b-it",
+  "k_values": [
+    5,
+    10,
+    20
+  ],
+  "layer_frac": 0.8,
+  "metric": "mutual kNN Jaccard, cosine neighbours (Angell et al., 2025)",
+  "n_probes": 240,
+  "run_id": "gemma2-2b",
+  "variants": [
+    {
+      "last_k10": 0.3903354460726752,
+      "last_k20": 0.4365216445339623,
+      "last_k5": 0.3467757936507937,
+      "layer_base": 20,
+      "layer_variant": 20,
+      "mean_k10": 0.7190240315240316,
+      "mean_k20": 0.7378461715418237,
+      "mean_k5": 0.7857638888888888,
+      "model_id": "cognitivecomputations/dolphin-2.9.4-gemma2-2b"
+    },
+    {
+      "last_k10": 0.23371200594497807,
+      "last_k20": 0.2715135851198352,
+      "last_k5": 0.2149801587301587,
+      "layer_base": 20,
+      "layer_variant": 20,
+      "mean_k10": 0.4387296237044689,
+      "mean_k20": 0.5170062510496433,
+      "mean_k5": 0.4328207671957672,
+      "model_id": "unsloth/gemma-2-2b"
+    }
+  ]
+}

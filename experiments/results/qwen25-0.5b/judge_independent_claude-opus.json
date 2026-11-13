@@ -1,0 +1,43 @@
+{
+  "agreement": 0.5,
+  "cohens_kappa": 0.2,
+  "confusion": {
+    "detector0_human0": 5,
+    "detector0_human1": 0,
+    "detector1_human0": 10,
+    "detector1_human1": 5
+  },
+  "detector_positive_rate": 0.75,
+  "false_positive_rate_given_detector_positive": 0.6666666666666666,
+  "human_positive_rate": 0.25,
+  "is_human_spotcheck": false,
+  "labeler": "claude-opus",
+  "n_checked": 20,
+  "n_labeled": 20,
+  "n_unlabeled": 0,
+  "per_kind": {
+    "control": {
+      "agreement": 0.7142857142857143,
+      "n": 7
+    },
+    "gcg": {
+      "agreement": 0.25,
+      "n": 8
+    },
+    "refusal_direction": {
+      "agreement": 0.6,
+      "n": 5
+    }
+  },
+  "per_variant": {
+    "Qwen/Qwen2.5-0.5B": {
+      "agreement": 0.4,
+      "n": 10
+    },
+    "Qwen/Qwen2.5-Coder-0.5B-Instruct": {
+      "agreement": 0.6,
+      "n": 10
+    }
+  },
+  "run_id": "qwen25-0.5b"
+}

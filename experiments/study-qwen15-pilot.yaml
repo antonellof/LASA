@@ -1,0 +1,36 @@
+# Engineering pilot only. No claim about scientific attack effectiveness.
+study_id: qwen15-prompt-transfer-pilot-v1
+run_id: qwen15-prompt-transfer-pilot-v1
+protocol_status: pilot
+output_dir: reports/qwen15-prompt-transfer-pilot-v1
+report:
+  out_dir: reports/qwen15-prompt-transfer-pilot-v1
+authorization: configs/authorization.poc.json
+models_dir: models
+seed: 20261108
+base:
+  model_id: Qwen/Qwen2.5-1.5B-Instruct
+  revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+variants:
+  - model_id: SakanaAI/TinySwallow-1.5B-Instruct
+    revision: 91e9fcc30f56d224aea84356c4d850cc4c5a3260
+    lineage: child_ft
+independent_judge:
+  model_id: cais/HarmBench-Mistral-7b-val-cls
+  revision: 51182c7cdaf9b2e5f05b745b81b047b67e7384a1
+  rubric: configs/judges/harmbench.json
+benchmark:
+  name: jailbreakbench
+  categories: [Disinformation]
+  per_category: 2
+gcg:
+  num_steps: 5
+  search_width: 16
+  batch_size: 8
+  topk: 16
+  use_prefix_cache: false
+  verbosity: ERROR
+generations: 2
+max_new_tokens: 128
+human_audit_n: 12
+top_k: 1

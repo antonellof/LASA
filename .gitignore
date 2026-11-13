@@ -1,0 +1,23 @@
+# python
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# local models and large artifacts
+models/
+*.safetensors
+*.gguf
+
+# generated findings (keep only redacted samples)
+reports/*
+!reports/.gitkeep
+!reports/sample_report.redacted.md
+
+# env
+.env
+
+# generated arXiv bundle
+paper/build/

@@ -1,0 +1,33 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install CPU torch
+        run: pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+      - name: Install package
+        run: pip install -e ".[dev,models]"
+      - name: Build wheel and check authorization schema packaging
+        run: |
+          pip wheel . --no-deps --wheel-dir /tmp/lasa-wheels
+          python - <<'PY'
+          import glob, zipfile
+          with zipfile.ZipFile(glob.glob('/tmp/lasa-wheels/lasa-*.whl')[0]) as wheel:
+              assert 'lasa/schemas/authorization.schema.json' in wheel.namelist()
+          PY
+      - name: Unit and smoke tests
+        run: pytest -q
+      - name: Paper tables reproduce from committed artifacts
+        run: |
+          lasa aggregate --out /tmp/aggregate --fig-dir ''
+          diff /tmp/aggregate/aggregate.md experiments/results/aggregate.md

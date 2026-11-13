@@ -1,0 +1,48 @@
+{
+  "authorization_basis": "public-research",
+  "authorization_id": "auth-poc-public-research-2026",
+  "benchmark": {
+    "n_behaviors": 12,
+    "name": "jailbreakbench"
+  },
+  "models": [
+    {
+      "digest": "9906674c5630aac083d4d55d7818e4ad257fb9113db3cc9ed56943265eb8b845",
+      "model_id": "unsloth/Llama-3.2-1B-Instruct",
+      "role": "base"
+    },
+    {
+      "digest": "25f4694a6089b25299bb973682f1f63a42688c6a0c142071f2ebcd39aff8b439",
+      "model_id": "cognitivecomputations/Dolphin3.0-Llama3.2-1B",
+      "role": "variant"
+    },
+    {
+      "digest": "50a68d0efab5f3aa4b3cd4d3b8627e288dba7e0d51599239b18bb68abab5e365",
+      "model_id": "unsloth/Llama-3.2-1B",
+      "role": "variant"
+    },
+    {
+      "digest": "35d101494fce756e027dadba687326efdaf34a35164900136709a96a501e78d5",
+      "model_id": "open-unlearning/tofu_Llama-3.2-1B-Instruct_full",
+      "role": "variant"
+    }
+  ],
+  "run_id": "llama32-1b",
+  "scoring": "strength_times_similarity",
+  "seed": 0,
+  "timestamp": "2026-11-08T05:46:11.273036+00:00",
+  "tool_versions": {
+    "jsonschema": "4.23.0",
+    "lasa": "0.0.1",
+    "nanogcg": "0.3.0",
+    "numpy": "1.26.4",
+    "platform": "macOS-26.7.2-arm64-arm-64bit",
+    "python": "3.11.5",
+    "pyyaml": "6.0.2",
+    "scipy": "1.13.1",
+    "torch": "2.5.1",
+    "transformers": "4.46.3",
+    "wrapped:arditi_refusal_direction": "9d852fae1a91",
+    "wrapped:nanogcg": "0.3.0"
+  }
+}

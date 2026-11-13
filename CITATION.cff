@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use LASA, cite this software and the accompanying manuscript."
+type: software
+title: "LASA: Lineage Attack Surface Analyzer"
+version: 0.0.1
+license: MIT
+authors:
+  - family-names: Fratepietro
+    given-names: Antonello
+repository-code: "https://github.com/antonellof/lineage-attack-surface-analyzer"
+url: "https://github.com/antonellof/lineage-attack-surface-analyzer"
+preferred-citation:
+  type: article
+  title: "Can Source-Model Evidence Prioritize Jailbreak Transfer to Related LLM Checkpoints? A Controlled Protocol and Two Confirmatory Studies"
+  authors:
+    - family-names: Fratepietro
+      given-names: Antonello
+  year: 2026
+  url: "https://github.com/antonellof/lineage-attack-surface-analyzer/blob/main/paper/PAPER.pdf"
+  notes: "Research manuscript accompanying the LASA software; see the paper for the scope of completed experiments."

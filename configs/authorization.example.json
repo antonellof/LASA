@@ -1,0 +1,11 @@
+{
+  "id": "auth-0001",
+  "operator": "Your Name <you@example.com>",
+  "scope": [
+    "meta-llama/Meta-Llama-3-8B-Instruct",
+    "your-org/your-private-finetune"
+  ],
+  "basis": "public-research",
+  "authorized_on": "2026-11-07",
+  "notes": "Public base plus an owned fine-tune. Replace with your real targets."
+}

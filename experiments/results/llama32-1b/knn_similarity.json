@@ -1,0 +1,47 @@
+{
+  "base": "unsloth/Llama-3.2-1B-Instruct",
+  "k_values": [
+    5,
+    10,
+    20
+  ],
+  "layer_frac": 0.8,
+  "metric": "mutual kNN Jaccard, cosine neighbours (Angell et al., 2025)",
+  "n_probes": 240,
+  "run_id": "llama32-1b",
+  "variants": [
+    {
+      "last_k10": 0.4197145851654365,
+      "last_k20": 0.4460278926239153,
+      "last_k5": 0.39538690476190474,
+      "layer_base": 12,
+      "layer_variant": 12,
+      "mean_k10": 0.6942016317016317,
+      "mean_k20": 0.7927407978494936,
+      "mean_k5": 0.6500992063492064,
+      "model_id": "cognitivecomputations/Dolphin3.0-Llama3.2-1B"
+    },
+    {
+      "last_k10": 0.2509250556947925,
+      "last_k20": 0.2849599924543231,
+      "last_k5": 0.22450396825396826,
+      "layer_base": 12,
+      "layer_variant": 12,
+      "mean_k10": 0.6055170523920523,
+      "mean_k20": 0.7183813247943682,
+      "mean_k5": 0.5605654761904761,
+      "model_id": "unsloth/Llama-3.2-1B"
+    },
+    {
+      "last_k10": 0.639515366169778,
+      "last_k20": 0.6614333707202896,
+      "last_k5": 0.6260251322751322,
+      "layer_base": 12,
+      "layer_variant": 12,
+      "mean_k10": 0.8435300810300811,
+      "mean_k20": 0.8853370663153274,
+      "mean_k5": 0.8259920634920636,
+      "model_id": "open-unlearning/tofu_Llama-3.2-1B-Instruct_full"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "authorization_basis": "public-research",
+  "authorization_id": "auth-poc-public-research-2026",
+  "benchmark": {
+    "n_behaviors": 12,
+    "name": "jailbreakbench"
+  },
+  "models": [
+    {
+      "digest": "cbc4234656799ddbec979605cfd7821a324e7f00f866d6234e09b113ac531e6f",
+      "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "role": "base"
+    },
+    {
+      "digest": "d90c8b99a3c39a1c7ead297c1bd36fdb64e785f8a0e800cc695a9257481c48b4",
+      "model_id": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+      "role": "variant"
+    },
+    {
+      "digest": "ee6379c6b6b6285821971bf2818d757e862b87da34320dba157847cb25cae6e1",
+      "model_id": "Qwen/Qwen2.5-0.5B",
+      "role": "variant"
+    }
+  ],
+  "run_id": "qwen25-0.5b",
+  "scoring": "strength_times_similarity",
+  "seed": 0,
+  "timestamp": "2026-11-08T05:45:59.293150+00:00",
+  "tool_versions": {
+    "jsonschema": "4.23.0",
+    "lasa": "0.0.1",
+    "nanogcg": "0.3.0",
+    "numpy": "1.26.4",
+    "platform": "macOS-26.7.2-arm64-arm-64bit",
+    "python": "3.11.5",
+    "pyyaml": "6.0.2",
+    "scipy": "1.13.1",
+    "torch": "2.5.1",
+    "transformers": "4.46.3",
+    "wrapped:arditi_refusal_direction": "9d852fae1a91",
+    "wrapped:nanogcg": "0.3.0"
+  }
+}

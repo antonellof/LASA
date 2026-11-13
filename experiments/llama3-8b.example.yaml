@@ -1,0 +1,34 @@
+# Example experiment config. Copy and edit.
+run_id: llama3-8b-poc-001
+seed: 0
+
+authorization: configs/authorization.example.json
+
+base:
+  model_id: meta-llama/Meta-Llama-3-8B-Instruct
+
+variants:
+  - model_id: your-org/your-private-finetune
+
+benchmark:
+  name: jailbreakbench        # or harmbench
+  subset: standard
+
+similarity:
+  metrics: [cka, cosine_meanpool]
+  probe_set: configs/neutral_probes.txt
+
+attacks:
+  primitives: [refusal_direction, gcg]
+
+predict:
+  scoring: strength_times_similarity   # pluggable
+
+verify:
+  top_k: 20
+  generations_per_attack: 10
+  judge: local                         # keep offline where possible
+  human_spotcheck_fraction: 0.1
+
+report:
+  out_dir: reports/llama3-8b-poc-001

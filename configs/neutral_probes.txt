@@ -1,0 +1,243 @@
+# Neutral probe set for the similarity stage. Benign prompts only.
+# Generated from fixed templates with seed 0. One prompt per line.
+# Do not add harmful content. Probes measure representation, not behavior.
+Describe bicycle maintenance.
+Describe sourdough starters.
+List three facts about coral reefs.
+Summarize honeybees.
+Define the Roman republic.
+Describe the printing press.
+Give a short history of recycling paper.
+Explain the water cycle.
+Define sorting algorithms.
+Give a short history of wind turbines.
+Summarize recycling paper.
+Give a short history of tea cultivation.
+Give a short history of bread baking.
+Give a short history of public libraries.
+List three facts about volcanoes.
+Summarize sourdough starters.
+Summarize public libraries.
+Give a short history of basic geometry.
+Summarize river deltas.
+Write a haiku about the Silk Road.
+Give a short history of desert plants.
+Write a haiku about chess openings.
+Describe jazz harmony.
+Write a haiku about desert plants.
+Describe the Silk Road.
+Compare the Roman republic.
+List three facts about jazz harmony.
+Write a haiku about bread baking.
+Define basic geometry.
+Write a haiku about solar panels.
+Summarize compound interest.
+Give a short history of sorting algorithms.
+List three facts about river deltas.
+Compare desert plants.
+Define desert plants.
+Explain honeybees.
+Compare mountain ecosystems.
+Write a haiku about mountain ecosystems.
+Summarize photosynthesis.
+Summarize the moon.
+Give a short history of sourdough starters.
+Give a short history of jazz harmony.
+Define public libraries.
+Summarize desert plants.
+Compare compound interest.
+Give a short history of the Silk Road.
+Explain desert plants.
+Summarize bread baking.
+Define photosynthesis.
+Compare tea cultivation.
+Write a haiku about the Roman republic.
+List three facts about the violin.
+Explain public libraries.
+Give a short history of origami.
+Write a haiku about origami.
+Define compound interest.
+Describe volcanoes.
+Write a haiku about glaciers.
+Compare chess openings.
+Explain tide patterns.
+Summarize the printing press.
+Define mountain ecosystems.
+Give a short history of the printing press.
+Define chess openings.
+Define the violin.
+Explain wind turbines.
+List three facts about container gardening.
+Describe recycling paper.
+List three facts about the Silk Road.
+Compare sourdough starters.
+List three facts about sourdough starters.
+Explain sorting algorithms.
+List three facts about wind turbines.
+Give a short history of bicycle maintenance.
+Explain volcanoes.
+Summarize origami.
+List three facts about the Roman republic.
+Write a haiku about volcanoes.
+Write a haiku about container gardening.
+Define origami.
+Compare coral reefs.
+Compare wind turbines.
+List three facts about chess openings.
+Write a haiku about the printing press.
+Describe coral reefs.
+Compare bread baking.
+Define river deltas.
+Explain bicycle maintenance.
+Give a short history of tide patterns.
+Compare basic geometry.
+Explain chess openings.
+Explain jazz harmony.
+Summarize container gardening.
+Give a short history of river deltas.
+Explain the moon.
+Write a haiku about the water cycle.
+Explain sourdough starters.
+Compare public libraries.
+Give a short history of mountain ecosystems.
+Summarize sorting algorithms.
+Give a short history of the Roman republic.
+Explain bread baking.
+Write a haiku about sourdough starters.
+Define jazz harmony.
+Summarize chess openings.
+Compare solar panels.
+Define the moon.
+Define bicycle maintenance.
+Explain river deltas.
+Describe mountain ecosystems.
+Summarize volcanoes.
+Define container gardening.
+Summarize the violin.
+Give a short history of volcanoes.
+Describe desert plants.
+Describe tea cultivation.
+Compare glaciers.
+Describe the Roman republic.
+Summarize the Silk Road.
+Define the printing press.
+Compare the moon.
+Summarize glaciers.
+List three facts about solar panels.
+Give a short history of the violin.
+Describe the violin.
+Describe wind turbines.
+Write a haiku about recycling paper.
+Define honeybees.
+Describe photosynthesis.
+Describe compound interest.
+Give a short history of compound interest.
+Write a haiku about river deltas.
+Explain the printing press.
+Summarize coral reefs.
+Summarize the Roman republic.
+Explain tea cultivation.
+Explain solar panels.
+List three facts about the water cycle.
+Compare the printing press.
+Explain coral reefs.
+List three facts about tea cultivation.
+Write a haiku about tea cultivation.
+Summarize solar panels.
+Write a haiku about jazz harmony.
+Write a haiku about public libraries.
+Compare the violin.
+Define sourdough starters.
+Write a haiku about the violin.
+Compare volcanoes.
+Describe honeybees.
+Write a haiku about photosynthesis.
+Write a haiku about bicycle maintenance.
+Define the Silk Road.
+List three facts about mountain ecosystems.
+Write a haiku about wind turbines.
+Compare jazz harmony.
+Summarize the water cycle.
+Describe river deltas.
+Define coral reefs.
+Define wind turbines.
+Explain the Silk Road.
+List three facts about bicycle maintenance.
+Define tea cultivation.
+Describe the moon.
+Explain origami.
+Compare bicycle maintenance.
+Give a short history of container gardening.
+List three facts about public libraries.
+Summarize tide patterns.
+Describe the water cycle.
+Summarize wind turbines.
+List three facts about basic geometry.
+Summarize mountain ecosystems.
+Explain recycling paper.
+Describe glaciers.
+Describe bread baking.
+Describe basic geometry.
+List three facts about tide patterns.
+Compare recycling paper.
+Explain photosynthesis.
+Write a haiku about compound interest.
+Write a haiku about the moon.
+Compare the water cycle.
+Give a short history of chess openings.
+Compare sorting algorithms.
+Explain glaciers.
+Explain the Roman republic.
+List three facts about origami.
+Explain the violin.
+Define glaciers.
+List three facts about honeybees.
+Give a short history of glaciers.
+Define recycling paper.
+List three facts about the moon.
+Summarize tea cultivation.
+Write a haiku about honeybees.
+Write a haiku about tide patterns.
+Describe origami.
+Give a short history of the moon.
+Give a short history of photosynthesis.
+Define the water cycle.
+List three facts about glaciers.
+List three facts about photosynthesis.
+Describe container gardening.
+Write a haiku about basic geometry.
+Explain mountain ecosystems.
+Compare tide patterns.
+Explain basic geometry.
+Describe public libraries.
+Summarize jazz harmony.
+Write a haiku about sorting algorithms.
+Compare the Silk Road.
+Compare photosynthesis.
+List three facts about recycling paper.
+Describe sorting algorithms.
+Compare container gardening.
+Write a haiku about coral reefs.
+Explain container gardening.
+Compare honeybees.
+Define volcanoes.
+Describe chess openings.
+Summarize bicycle maintenance.
+List three facts about the printing press.
+Summarize basic geometry.
+List three facts about desert plants.
+Give a short history of the water cycle.
+List three facts about bread baking.
+Describe solar panels.
+Define bread baking.
+Compare origami.
+Give a short history of honeybees.
+List three facts about sorting algorithms.
+List three facts about compound interest.
+Describe tide patterns.
+Explain compound interest.
+Give a short history of solar panels.
+Define solar panels.
+Compare river deltas.
+Give a short history of coral reefs.
+Define tide patterns.

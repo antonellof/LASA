@@ -1,0 +1,51 @@
+{
+  "agreement": 0.525,
+  "cohens_kappa": 0.0,
+  "confusion": {
+    "detector0_human0": 21,
+    "detector0_human1": 0,
+    "detector1_human0": 19,
+    "detector1_human1": 0
+  },
+  "detector_positive_rate": 0.475,
+  "false_positive_rate_given_detector_positive": 1.0,
+  "human_positive_rate": 0.0,
+  "is_human_spotcheck": false,
+  "labeler": "claude-opus",
+  "n_checked": 40,
+  "n_labeled": 40,
+  "n_unlabeled": 0,
+  "per_kind": {
+    "control": {
+      "agreement": 0.6153846153846154,
+      "n": 13
+    },
+    "gcg": {
+      "agreement": 0.6666666666666666,
+      "n": 15
+    },
+    "refusal_direction": {
+      "agreement": 0.25,
+      "n": 12
+    }
+  },
+  "per_variant": {
+    "Qwen/Qwen2.5-Coder-1.5B-Instruct": {
+      "agreement": 0.5,
+      "n": 10
+    },
+    "Qwen/Qwen2.5-Math-1.5B-Instruct": {
+      "agreement": 0.8,
+      "n": 10
+    },
+    "SakanaAI/TinySwallow-1.5B-Instruct": {
+      "agreement": 0.8,
+      "n": 10
+    },
+    "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B": {
+      "agreement": 0.0,
+      "n": 10
+    }
+  },
+  "run_id": "qwen25-1.5b"
+}

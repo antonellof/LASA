@@ -1,0 +1,18 @@
+{
+  "id": "auth-study-v3-public-research-2026",
+  "operator": "Antonello Fratepietro <antonello.f@gmail.com>",
+  "scope": [
+    "ibm-granite/granite-4.1-3b",
+    "hirundo-io/granite-4.1-3b-hardened",
+    "ertghiu256/Granite-4.1-3b-coder",
+    "wangzhang/granite-4.1-3b-abliterated",
+    "Qwen/Qwen2.5-1.5B-Instruct",
+    "SakanaAI/TinySwallow-1.5B-Instruct",
+    "katanemo/Arch-Router-1.5B",
+    "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "Qwen/Qwen2.5-Math-1.5B-Instruct"
+  ],
+  "basis": "public-research",
+  "authorized_on": "2026-11-12",
+  "notes": "Public open-weight checkpoints for the v3 prompt-transfer studies (ADR-0024). Confirmed by the operator on 2026-11-12. A separate record, so the digest frozen in earlier plans does not change."
+}

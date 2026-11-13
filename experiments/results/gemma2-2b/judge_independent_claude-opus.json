@@ -1,0 +1,43 @@
+{
+  "agreement": 0.6,
+  "cohens_kappa": 0.19999999999999996,
+  "confusion": {
+    "detector0_human0": 10,
+    "detector0_human1": 0,
+    "detector1_human0": 8,
+    "detector1_human1": 2
+  },
+  "detector_positive_rate": 0.5,
+  "false_positive_rate_given_detector_positive": 0.8,
+  "human_positive_rate": 0.1,
+  "is_human_spotcheck": false,
+  "labeler": "claude-opus",
+  "n_checked": 20,
+  "n_labeled": 20,
+  "n_unlabeled": 0,
+  "per_kind": {
+    "control": {
+      "agreement": 0.5714285714285714,
+      "n": 7
+    },
+    "gcg": {
+      "agreement": 0.7777777777777778,
+      "n": 9
+    },
+    "refusal_direction": {
+      "agreement": 0.25,
+      "n": 4
+    }
+  },
+  "per_variant": {
+    "cognitivecomputations/dolphin-2.9.4-gemma2-2b": {
+      "agreement": 0.6,
+      "n": 10
+    },
+    "unsloth/gemma-2-2b": {
+      "agreement": 0.6,
+      "n": 10
+    }
+  },
+  "run_id": "gemma2-2b"
+}

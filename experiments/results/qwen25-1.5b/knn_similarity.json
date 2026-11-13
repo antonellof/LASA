@@ -1,0 +1,58 @@
+{
+  "base": "Qwen/Qwen2.5-1.5B-Instruct",
+  "k_values": [
+    5,
+    10,
+    20
+  ],
+  "layer_frac": 0.8,
+  "metric": "mutual kNN Jaccard, cosine neighbours (Angell et al., 2025)",
+  "n_probes": 240,
+  "run_id": "qwen25-1.5b",
+  "variants": [
+    {
+      "last_k10": 0.4455537704183215,
+      "last_k20": 0.5000811363176705,
+      "last_k5": 0.4035548941798942,
+      "layer_base": 22,
+      "layer_variant": 22,
+      "mean_k10": 0.6565094627594626,
+      "mean_k20": 0.7993794141982549,
+      "mean_k5": 0.6404265873015873,
+      "model_id": "Qwen/Qwen2.5-Coder-1.5B-Instruct"
+    },
+    {
+      "last_k10": 0.27719700678292014,
+      "last_k20": 0.4140116323108431,
+      "last_k5": 0.1853505291005291,
+      "layer_base": 22,
+      "layer_variant": 22,
+      "mean_k10": 0.48938266755604215,
+      "mean_k20": 0.7487879940778492,
+      "mean_k5": 0.44255952380952385,
+      "model_id": "Qwen/Qwen2.5-Math-1.5B-Instruct"
+    },
+    {
+      "last_k10": 0.47543761385673144,
+      "last_k20": 0.5409421490738027,
+      "last_k5": 0.44561838624338623,
+      "layer_base": 22,
+      "layer_variant": 22,
+      "mean_k10": 0.7060966810966811,
+      "mean_k20": 0.8379161477000058,
+      "mean_k5": 0.6566468253968254,
+      "model_id": "SakanaAI/TinySwallow-1.5B-Instruct"
+    },
+    {
+      "last_k10": 0.39047718850350427,
+      "last_k20": 0.5022610611129255,
+      "last_k5": 0.32700066137566136,
+      "layer_base": 22,
+      "layer_variant": 22,
+      "mean_k10": 0.5826485197808727,
+      "mean_k20": 0.7622387153908894,
+      "mean_k5": 0.537582671957672,
+      "model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+    }
+  ]
+}

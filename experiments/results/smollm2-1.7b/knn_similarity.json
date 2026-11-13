@@ -1,0 +1,47 @@
+{
+  "base": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "k_values": [
+    5,
+    10,
+    20
+  ],
+  "layer_frac": 0.8,
+  "metric": "mutual kNN Jaccard, cosine neighbours (Angell et al., 2025)",
+  "n_probes": 240,
+  "run_id": "smollm2-1.7b",
+  "variants": [
+    {
+      "last_k10": 0.8288433788433789,
+      "last_k20": 0.8714094359746535,
+      "last_k5": 0.7979166666666667,
+      "layer_base": 19,
+      "layer_variant": 19,
+      "mean_k10": 0.9497474747474748,
+      "mean_k20": 0.9591630591630592,
+      "mean_k5": 0.9486111111111111,
+      "model_id": "saidutta69/SmolLM2-1.7B-Instruct-heretic"
+    },
+    {
+      "last_k10": 0.41848274596920104,
+      "last_k20": 0.5099994835115699,
+      "last_k5": 0.3931382275132275,
+      "layer_base": 19,
+      "layer_variant": 19,
+      "mean_k10": 0.7589368964368965,
+      "mean_k20": 0.8246523779494795,
+      "mean_k5": 0.7921626984126983,
+      "model_id": "HuggingFaceTB/SmolLM2-1.7B"
+    },
+    {
+      "last_k10": 0.7083541458541459,
+      "last_k20": 0.7706215510201017,
+      "last_k5": 0.6705191798941799,
+      "layer_base": 19,
+      "layer_variant": 19,
+      "mean_k10": 0.8935606060606059,
+      "mean_k20": 0.9180853566723133,
+      "mean_k5": 0.8970734126984127,
+      "model_id": "yoshitomo-matsubara/smollm2_1_7b-alpaca-it"
+    }
+  ]
+}

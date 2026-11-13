@@ -1,0 +1,43 @@
+# Superseded before target outcomes by study-qwen15-v2.yaml after the project review.
+# Retained to identify the stopped source-search plan; do not resume it with changed code.
+# Independent judge validation and pilot timing are required before this run.
+study_id: qwen15-prompt-transfer-v1
+run_id: qwen15-prompt-transfer-v1
+protocol_status: confirmatory
+output_dir: reports/qwen15-prompt-transfer-v1
+report:
+  out_dir: reports/qwen15-prompt-transfer-v1
+authorization: configs/authorization.poc.json
+models_dir: models
+seed: 20261108
+base:
+  model_id: Qwen/Qwen2.5-1.5B-Instruct
+  revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+variants:
+  - model_id: SakanaAI/TinySwallow-1.5B-Instruct
+    revision: 91e9fcc30f56d224aea84356c4d850cc4c5a3260
+    lineage: child_ft
+  - model_id: katanemo/Arch-Router-1.5B
+    revision: 5b156890a91b1035a86f82faf1a651debf309009
+    lineage: child_ft
+  - model_id: Qwen/Qwen2.5-Coder-1.5B-Instruct
+    revision: 2e1fd397ee46e1388853d2af2c993145b0f1098a
+    lineage: sibling_ft
+independent_judge:
+  model_id: cais/HarmBench-Mistral-7b-val-cls
+  revision: 51182c7cdaf9b2e5f05b745b81b047b67e7384a1
+  rubric: configs/judges/harmbench.json
+benchmark:
+  name: jailbreakbench
+  per_category: 4
+gcg:
+  num_steps: 250
+  search_width: 64
+  batch_size: 8
+  topk: 64
+  use_prefix_cache: false
+  verbosity: ERROR
+generations: 5
+max_new_tokens: 512
+human_audit_n: 120
+top_k: 5

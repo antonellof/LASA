@@ -1,0 +1,237 @@
+{
+  "authorization_id": "auth-poc-public-research-2026",
+  "benchmark_digest": "697845e57039fbb7a076fec6e2ea7f5b3eb6560b6c68f626263026f72cc01c19",
+  "code_digest": "7437e6a43607003b16e7bf91920ca13bbb457fb384d82c31067b9d966bab3636",
+  "code_revision": "89ea4ec9932b3d6373b682ae41df25024c933698",
+  "config_digest": "aa3118aa11cc0a7e908aae406527a557dc7d02de92115f86257106e82aa91a1c",
+  "models": {
+    "Qwen/Qwen2.5-1.5B-Instruct": {
+      "digest": "8ef5ebc4dbb9c3f7664ecf106c3cba09229294ae5ae3c39daccbb74e2f2cb395"
+    },
+    "Qwen/Qwen2.5-Coder-1.5B-Instruct": {
+      "digest": "3c192c0f9818e7e65cab299954833820ec862e646d367abd7b80c499008e3cf4"
+    },
+    "SakanaAI/TinySwallow-1.5B-Instruct": {
+      "digest": "4408f78a361013d1b4cec14e70938b946a95cc17063c0a6886b29a012bcc5253"
+    },
+    "cais/HarmBench-Mistral-7b-val-cls": {
+      "digest": "ca87c2fd34bd69fbf8feb1fa038f4b6f2588d31c84e283fb1dd5f67cbe6ccfaa"
+    },
+    "katanemo/Arch-Router-1.5B": {
+      "digest": "d2157b271535c2d8433ccde9a6d557c432c88154d2f4ae76bca4222c2dda5db1"
+    }
+  },
+  "plan_digest": "67d910a5ed75fceb14077ee87e6ac5dfb148f2aea8aafc0ff3d530a7566cab90",
+  "selected_behaviors": [
+    {
+      "behavior_id": "jailbreakbench-050",
+      "category": "Disinformation",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-055",
+      "category": "Disinformation",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-058",
+      "category": "Disinformation",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-056",
+      "category": "Disinformation",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-036",
+      "category": "Economic harm",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-038",
+      "category": "Economic harm",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-037",
+      "category": "Economic harm",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-039",
+      "category": "Economic harm",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-084",
+      "category": "Expert advice",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-089",
+      "category": "Expert advice",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-080",
+      "category": "Expert advice",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-087",
+      "category": "Expert advice",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-042",
+      "category": "Fraud/Deception",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-046",
+      "category": "Fraud/Deception",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-041",
+      "category": "Fraud/Deception",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-049",
+      "category": "Fraud/Deception",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-093",
+      "category": "Government decision-making",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-092",
+      "category": "Government decision-making",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-097",
+      "category": "Government decision-making",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-096",
+      "category": "Government decision-making",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-003",
+      "category": "Harassment/Discrimination",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-002",
+      "category": "Harassment/Discrimination",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-004",
+      "category": "Harassment/Discrimination",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-006",
+      "category": "Harassment/Discrimination",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-013",
+      "category": "Malware/Hacking",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-014",
+      "category": "Malware/Hacking",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-019",
+      "category": "Malware/Hacking",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-017",
+      "category": "Malware/Hacking",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-028",
+      "category": "Physical harm",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-024",
+      "category": "Physical harm",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-022",
+      "category": "Physical harm",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-023",
+      "category": "Physical harm",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-072",
+      "category": "Privacy",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-071",
+      "category": "Privacy",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-077",
+      "category": "Privacy",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-070",
+      "category": "Privacy",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-064",
+      "category": "Sexual/Adult content",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-068",
+      "category": "Sexual/Adult content",
+      "split": "development"
+    },
+    {
+      "behavior_id": "jailbreakbench-065",
+      "category": "Sexual/Adult content",
+      "split": "heldout"
+    },
+    {
+      "behavior_id": "jailbreakbench-062",
+      "category": "Sexual/Adult content",
+      "split": "heldout"
+    }
+  ],
+  "status": "stopped during first source search before target outcomes; superseded by reviewed v2 protocol",
+  "study_id": "qwen15-prompt-transfer-v1",
+  "timestamp": "2026-11-08T16:48:33.577751+00:00",
+  "versions": {
+    "lasa": "0.0.1",
+    "nanogcg": "0.3.0",
+    "numpy": "1.26.4",
+    "torch": "2.5.1",
+    "transformers": "4.46.3"
+  }
+}
